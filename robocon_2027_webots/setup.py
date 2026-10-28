@@ -79,6 +79,7 @@ setup(
     entry_points={
         'console_scripts': [
             'tr_webots_driver = robocon_2027_webots.tr_webots_driver:main',
+            'tr_keyboard_teleop = robocon_2027_webots.tr_keyboard_teleop:main',
         ],
     },
 )
