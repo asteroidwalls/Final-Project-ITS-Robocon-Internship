@@ -768,33 +768,1437 @@ Solid {
     radius 0.135
   }
 }
+
 SolidBox {
-  translation -5 5 0.175
-  name "game_piece_red"
+  translation -5.2833 4.7750 0.1760
+  name "earth_block_red_00"
   size 0.35 0.35 0.35
   contactMaterial "game_piece"
   appearance PBRAppearance {
-    baseColor 0.85 0.1 0.1
-    roughness 0.6
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
     metalness 0
   }
   physics Physics {
     density -1
-    mass 1.0
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
   }
 }
 SolidBox {
-  translation 5 5 0.175
-  name "game_piece_blue"
+  translation -5.2833 4.7750 0.5270
+  name "earth_block_red_01"
   size 0.35 0.35 0.35
   contactMaterial "game_piece"
   appearance PBRAppearance {
-    baseColor 0.10 0.25 0.80
-    roughness 0.6
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
     metalness 0
   }
   physics Physics {
     density -1
-    mass 1.0
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -5.2833 5.2250 0.1760
+  name "earth_block_red_02"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -5.2833 5.2250 0.5270
+  name "earth_block_red_03"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.8917 4.7750 0.1760
+  name "earth_block_red_04"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.8917 4.7750 0.5270
+  name "earth_block_red_05"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.8917 5.2250 0.1760
+  name "earth_block_red_06"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.8917 5.2250 0.5270
+  name "earth_block_red_07"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.5000 4.7750 0.1760
+  name "earth_block_red_08"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.5000 4.7750 0.5270
+  name "earth_block_red_09"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.5000 5.2250 0.1760
+  name "earth_block_red_10"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.5000 5.2250 0.5270
+  name "earth_block_red_11"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.1083 4.7750 0.1760
+  name "earth_block_red_12"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.1083 4.7750 0.5270
+  name "earth_block_red_13"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.1083 5.2250 0.1760
+  name "earth_block_red_14"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -4.1083 5.2250 0.5270
+  name "earth_block_red_15"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -3.7167 4.7750 0.1760
+  name "earth_block_red_16"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -3.7167 4.7750 0.5270
+  name "earth_block_red_17"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -3.7167 5.2250 0.1760
+  name "earth_block_red_18"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation -3.7167 5.2250 0.5270
+  name "earth_block_red_19"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.875 0.133 0.133
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 5.2833 4.7750 0.1760
+  name "earth_block_blue_00"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 5.2833 4.7750 0.5270
+  name "earth_block_blue_01"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 5.2833 5.2250 0.1760
+  name "earth_block_blue_02"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 5.2833 5.2250 0.5270
+  name "earth_block_blue_03"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.8917 4.7750 0.1760
+  name "earth_block_blue_04"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.8917 4.7750 0.5270
+  name "earth_block_blue_05"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.8917 5.2250 0.1760
+  name "earth_block_blue_06"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.8917 5.2250 0.5270
+  name "earth_block_blue_07"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.5000 4.7750 0.1760
+  name "earth_block_blue_08"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.5000 4.7750 0.5270
+  name "earth_block_blue_09"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.5000 5.2250 0.1760
+  name "earth_block_blue_10"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.5000 5.2250 0.5270
+  name "earth_block_blue_11"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.1083 4.7750 0.1760
+  name "earth_block_blue_12"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.1083 4.7750 0.5270
+  name "earth_block_blue_13"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.1083 5.2250 0.1760
+  name "earth_block_blue_14"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 4.1083 5.2250 0.5270
+  name "earth_block_blue_15"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 3.7167 4.7750 0.1760
+  name "earth_block_blue_16"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 3.7167 4.7750 0.5270
+  name "earth_block_blue_17"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 3.7167 5.2250 0.1760
+  name "earth_block_blue_18"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+SolidBox {
+  translation 3.7167 5.2250 0.5270
+  name "earth_block_blue_19"
+  size 0.35 0.35 0.35
+  contactMaterial "game_piece"
+  appearance PBRAppearance {
+    baseColor 0.196 0.000 1.000
+    roughness 0.8
+    metalness 0
+  }
+  physics Physics {
+    density -1
+    mass 0.6
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.020417 0.020417 0.020417, 0 0 0 ]
+  }
+}
+Solid {
+  translation -0.4800 -3.7700 0.1010
+  rotation 0 0 1 0
+  name "sky_block_r0c0"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation 0.0000 -3.7700 0.1010
+  rotation 0 0 1 0
+  name "sky_block_r0c2"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation 0.4800 -3.7700 0.1010
+  rotation 1 0 0 3.14159
+  name "sky_block_r0c4"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation -0.2400 -4.0100 0.1010
+  rotation 0 0 1 0
+  name "sky_block_r1c1"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation 0.2400 -4.0100 0.1010
+  rotation 1 0 0 3.14159
+  name "sky_block_r1c3"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation -0.4800 -4.2500 0.1010
+  rotation 0 0 1 0
+  name "sky_block_r2c0"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation 0.4800 -4.2500 0.1010
+  rotation 1 0 0 3.14159
+  name "sky_block_r2c4"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation -0.2400 -4.4900 0.1010
+  rotation 0 0 1 0
+  name "sky_block_r3c1"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation 0.2400 -4.4900 0.1010
+  rotation 1 0 0 3.14159
+  name "sky_block_r3c3"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation -0.4800 -4.7300 0.1010
+  rotation 0 0 1 0
+  name "sky_block_r4c0"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation 0.0000 -4.7300 0.1010
+  rotation 1 0 0 3.14159
+  name "sky_block_r4c2"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation 0.4800 -4.7300 0.1010
+  rotation 1 0 0 3.14159
+  name "sky_block_r4c4"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.800 0.680 0.500
+        roughness 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.2 0.2
+      }
+    }
+    Transform {
+      translation 0 0 0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.875 0.133 0.133
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0 -0.1000
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.196 0.000 1.000
+            roughness 0.8
+            metalness 0
+          }
+          geometry Box {
+            size 0.2 0.2 0.002
+          }
+        }
+      ]
+    }
+  ]
+  boundingObject Box {
+    size 0.2 0.2 0.2
+  }
+  physics Physics {
+    density -1
+    mass 0.22
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.002444 0.002444 0.002444, 0 0 0 ]
+  }
+}
+Solid {
+  translation 0.0000 4.2500 0.5500
+  name "mustika_pillar_cup"
+  children [
+    Transform { translation 0.1125 0.0000 0 rotation 0 0 1 0.0000 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation 0.1039 0.0431 0 rotation 0 0 1 0.3927 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation 0.0795 0.0795 0 rotation 0 0 1 0.7854 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation 0.0431 0.1039 0 rotation 0 0 1 1.1781 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation 0.0000 0.1125 0 rotation 0 0 1 1.5708 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation -0.0431 0.1039 0 rotation 0 0 1 1.9635 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation -0.0795 0.0795 0 rotation 0 0 1 2.3562 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation -0.1039 0.0431 0 rotation 0 0 1 2.7489 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation -0.1125 0.0000 0 rotation 0 0 1 3.1416 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation -0.1039 -0.0431 0 rotation 0 0 1 3.5343 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation -0.0795 -0.0795 0 rotation 0 0 1 3.9270 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation -0.0431 -0.1039 0 rotation 0 0 1 4.3197 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation -0.0000 -0.1125 0 rotation 0 0 1 4.7124 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation 0.0431 -0.1039 0 rotation 0 0 1 5.1051 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation 0.0795 -0.0795 0 rotation 0 0 1 5.4978 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+    Transform { translation 0.1039 -0.0431 0 rotation 0 0 1 5.8905 children [ Shape { appearance PBRAppearance { baseColor 0.392 0.243 0.000 roughness 0.5 metalness 0 } geometry Box { size 0.045 0.05 0.1 } } ] }
+  ]
+  boundingObject Group {
+    children [
+      Transform { translation 0.1125 0.0000 0 rotation 0 0 1 0.0000 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation 0.1039 0.0431 0 rotation 0 0 1 0.3927 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation 0.0795 0.0795 0 rotation 0 0 1 0.7854 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation 0.0431 0.1039 0 rotation 0 0 1 1.1781 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation 0.0000 0.1125 0 rotation 0 0 1 1.5708 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation -0.0431 0.1039 0 rotation 0 0 1 1.9635 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation -0.0795 0.0795 0 rotation 0 0 1 2.3562 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation -0.1039 0.0431 0 rotation 0 0 1 2.7489 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation -0.1125 0.0000 0 rotation 0 0 1 3.1416 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation -0.1039 -0.0431 0 rotation 0 0 1 3.5343 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation -0.0795 -0.0795 0 rotation 0 0 1 3.9270 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation -0.0431 -0.1039 0 rotation 0 0 1 4.3197 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation -0.0000 -0.1125 0 rotation 0 0 1 4.7124 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation 0.0431 -0.1039 0 rotation 0 0 1 5.1051 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation 0.0795 -0.0795 0 rotation 0 0 1 5.4978 children [ Box { size 0.045 0.05 0.1 } ] }
+      Transform { translation 0.1039 -0.0431 0 rotation 0 0 1 5.8905 children [ Box { size 0.045 0.05 0.1 } ] }
+    ]
+  }
+}
+Solid {
+  translation 0.0000 4.2500 0.6551
+  name "mustika_ball"
+  contactMaterial "game_piece"
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.950 0.800 0.150
+        roughness 0.6
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.105
+        subdivision 3
+      }
+    }
+  ]
+  boundingObject Sphere {
+    radius 0.105
+  }
+  physics Physics {
+    density -1
+    mass 0.27
+    centerOfMass [ 0 0 0 ]
+    inertiaMatrix [ 0.001984 0.001984 0.001984, 0 0 0 ]
   }
 }

@@ -58,6 +58,14 @@ setup(
             ),
             glob('urdf/*')
         ),
+                (
+            os.path.join(
+                'share',
+                package_name,
+                'launch'
+            ),
+            glob('launch/*.launch.xml')
+        ),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
