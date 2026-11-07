@@ -137,7 +137,6 @@ class TRKeyboardTeleop(Node):
             if self._odom_received:
                 vx, vy = global_to_body(vx, vy, self._yaw)
             else:
-
                 vx, vy, wz = 0.0, 0.0, 0.0
 
         message = Twist()

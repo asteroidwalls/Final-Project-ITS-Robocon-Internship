@@ -4,51 +4,43 @@
 #include <cmath>
 #include <string>
 
-namespace robocon_control
-{
+namespace robocon_control {
 
 inline double clamp(double v, double lo, double hi) {return std::max(lo, std::min(v, hi));}
-
-inline double wrapAngle(double a) {return std::atan2(std::sin(a), std::cos(a));}
-
-inline double yawFromQuaternion(double x, double y, double z, double w)
-{
+inline double wrapAngle(double a) {return std::atan2(std::sin(a), std::cos(a));} // -pi to pi convertion
+inline double yawFromQuaternion(double x, double y, double z, double w) {
   return std::atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));
-}
+} 
 
-inline void globalToBody(double vx_g, double vy_g, double yaw, double & vx_b, double & vy_b)
-{
+inline void globalToBody(double vx_g, double vy_g, double yaw, double & vx_b, double & vy_b) {
   const double c = std::cos(yaw);
   const double s = std::sin(yaw);
   vx_b = c * vx_g + s * vy_g;
   vy_b = -s * vx_g + c * vy_g;
 }
 
-class PID
-{
+class PID {
 public:
   PID(double kp, double ki, double kd, double i_limit, double i_zone)
   : kp_(kp), ki_(ki), kd_(kd), i_limit_(i_limit), i_zone_(i_zone) {}
 
-  void reset()
-  {
+  void reset() {
     integral_ = 0.0;
     has_prev_ = false;
     prev_error_ = 0.0;
   }
 
-  double update(double error, double dt)
-  {
+  double update(double error, double dt) {
     if (dt <= 0.0) {
-      return kp_ * error;
+      return kp_ * error; 
     }
     if (i_zone_ > 0.0 && std::fabs(error) > i_zone_) {
-      integral_ = 0.0;  // jauh dari target: jangan menumpuk
+      integral_ = 0.0; 
     } else {
       integral_ += error * dt;
     }
     if (ki_ > 0.0) {
-      const double bound = i_limit_ / ki_;
+      const double bound = i_limit_ / ki_; 
       integral_ = clamp(integral_, -bound, bound);
     }
     const double derivative = has_prev_ ? (error - prev_error_) / dt : 0.0;
@@ -64,62 +56,54 @@ private:
   bool has_prev_{false};
 };
 
-struct Pose
-{
+struct Pose {
   double x{0.0};
   double y{0.0};
   double yaw{0.0};
 };
 
-struct GoToParams
-{
+struct GoToParams {
   double kp_pos{1.2}, ki_pos{0.05}, kd_pos{0.15}, i_limit_pos{0.15}, i_zone_pos{0.25};
   double kp_yaw{2.0}, ki_yaw{0.02}, kd_yaw{0.10}, i_limit_yaw{0.15}, i_zone_yaw{0.3};
-  double max_linear_speed{0.6};
-  double max_angular_speed{1.5};
-  double tol_pos{0.03};
-  double tol_yaw{0.05};
-  double settle_time{0.3};
+  double max_linear_speed{0.6}; 
+  double max_angular_speed{1.5}; 
+  double tol_pos{0.03}; 
+  double tol_yaw{0.05}; 
+  double settle_time{0.3}; 
 };
 
-struct GoToConfig
-{
+struct GoToConfig {
   GoToParams ctrl;
   double linear_accel{1.5};
-  double angular_accel{4.0};
-  double timeout{60.0};  // detik; <= 0 berarti tanpa timeout
+  double angular_accel{4.0}; 
+  double timeout{60.0};
 };
 
-struct GoToOutput
-{
-  double vx{0.0}, vy{0.0}, wz{0.0};  // kerangka global
+struct GoToOutput {
+  double vx{0.0}, vy{0.0}, wz{0.0}; 
   bool reached{false};
   double dist{0.0};
-  double yaw_error{0.0};
+  double yaw_error{0.0}; 
 };
 
-class GoToController
-{
+class GoToController {
 public:
-  explicit GoToController(const GoToParams & p)
+  explicit GoToController(const GoToParams & p) 
   : p_(p),
     pid_x_(p.kp_pos, p.ki_pos, p.kd_pos, p.i_limit_pos, p.i_zone_pos),
     pid_y_(p.kp_pos, p.ki_pos, p.kd_pos, p.i_limit_pos, p.i_zone_pos),
-    pid_yaw_(p.kp_yaw, p.ki_yaw, p.kd_yaw, p.i_limit_yaw, p.i_zone_yaw) {}
+    pid_yaw_(p.kp_yaw, p.ki_yaw, p.kd_yaw, p.i_limit_yaw, p.i_zone_yaw) {} 
 
-  void setGoal(double x, double y, double yaw)
-  {
-    goal_ = Pose{x, y, wrapAngle(yaw)};
-    pid_x_.reset();
+  void setGoal(double x, double y, double yaw) {
+    goal_ = Pose{x, y, wrapAngle(yaw)}; 
     pid_y_.reset();
-    pid_yaw_.reset();
+    pid_yaw_.reset(); 
     settled_ = 0.0;
   }
 
-  const Pose & goal() const {return goal_;}
+  const Pose & goal() const {return goal_;} 
 
-  GoToOutput update(const Pose & now, double dt)
-  {
+  GoToOutput update(const Pose & now, double dt) {
     GoToOutput o;
     const double ex = goal_.x - now.x;
     const double ey = goal_.y - now.y;
@@ -154,8 +138,7 @@ private:
 
 enum class GoToStatus {kIdle, kMoving, kReached, kTimeout, kCancelled};
 
-inline std::string statusName(GoToStatus s)
-{
+inline std::string statusName(GoToStatus s) {
   switch (s) {
     case GoToStatus::kIdle: return "IDLE";
     case GoToStatus::kMoving: return "MOVING";
@@ -166,27 +149,23 @@ inline std::string statusName(GoToStatus s)
   return "IDLE";
 }
 
-struct StepResult
-{
-  bool send_cmd{false};   // terbitkan Twist (vx, vy, wz)
-  bool finished{false};   // target selesai pada langkah ini (REACHED / TIMEOUT)
+struct StepResult {
+  bool send_cmd{false}; 
+  bool finished{false};   
   GoToStatus status{GoToStatus::kIdle};
-  double vx{0.0}, vy{0.0}, wz{0.0};  // kerangka badan robot
+  double vx{0.0}, vy{0.0}, wz{0.0}; 
   double dist{0.0};
   double yaw_error{0.0};
 };
 
-/// Target yang sudah diterjemahkan ke frame odom.
-struct ResolvedGoal
-{
+struct ResolvedGoal {
   double x{0.0}, y{0.0}, yaw{0.0};
   bool frame_known{true};
 };
 
 inline ResolvedGoal resolveGoal(
   const std::string & frame_in, double px, double py, bool has_yaw, double goal_yaw,
-  const Pose & cur)
-{
+  const Pose & cur) {
   std::string frame = frame_in;
   if (!frame.empty() && frame.front() == '/') {
     frame.erase(0, 1);
@@ -208,22 +187,19 @@ inline ResolvedGoal resolveGoal(
   return g;
 }
 
-class GoToRunner
-{
+class GoToRunner {
 public:
   explicit GoToRunner(const GoToConfig & cfg)
   : cfg_(cfg), controller_(cfg.ctrl) {}
 
-  void setGoal(const Pose & goal)
-  {
+  void setGoal(const Pose & goal) {
     controller_.setGoal(goal.x, goal.y, goal.yaw);
     active_ = true;
     elapsed_ = 0.0;
     status_ = GoToStatus::kMoving;
   }
 
-  bool cancel()
-  {
+  bool cancel() {
     if (!active_) {
       return false;
     }
@@ -237,8 +213,7 @@ public:
   GoToStatus status() const {return status_;}
   const Pose & goal() const {return controller_.goal();}
 
-  StepResult step(const Pose & pose, double dt)
-  {
+  StepResult step(const Pose & pose, double dt) {
     StepResult r;
     r.status = status_;
     if (!active_) {
@@ -270,8 +245,7 @@ public:
   }
 
 private:
-  static double slew(double current, double target, double max_step)
-  {
+  static double slew(double current, double target, double max_step) {
     const double delta = target - current;
     if (std::fabs(delta) <= max_step) {
       return target;
@@ -279,8 +253,7 @@ private:
     return current + std::copysign(max_step, delta);
   }
 
-  StepResult finish(GoToStatus s, StepResult r)
-  {
+  StepResult finish(GoToStatus s, StepResult r) {
     active_ = false;
     cmd_g_ = {0.0, 0.0, 0.0};
     status_ = s;
